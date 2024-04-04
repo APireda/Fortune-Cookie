@@ -1,0 +1,74 @@
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  align-items: center;
+  background: linear-gradient(60deg, #190361, #BB00FF);
+  color: #34355B;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  font-size: 1.6rem;
+}
+
+main {
+  background: #FFF;
+  border-radius: 0.5rem;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.8);
+  box-sizing: border-box;
+  padding: 6.4rem;
+  text-align: center;
+  width: 42.8rem;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.4rem;
+}
+
+p {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.5rem;
+  margin: 1.4rem 0 2rem 0;
+}
+
+#fortune-cookie {
+  cursor: pointer;
+}
+
+button {
+  background: #FF9500;
+  border: none;
+  border-radius: 0.4rem;
+  color: #FFF;
+  cursor: pointer;
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 1.7rem;
+  padding: 1.6rem;
+  transition: filter 300ms ease-in-out;
+}
+
+button:hover {
+  filter: brightness(0.9);
+}
+
+.cookie-message {
+  background: #E4EDF1;
+  box-shadow: 0.2rem 0.2rem 0.2rem rgba(85, 85, 85, 0.5);
+  margin-top: 1.7rem;
+  padding: 1rem;
+}
+
+.cookie-message > p {
+  color: #000;
+  font-family: "Dancing Script", cursive;
+  font-size: 2.4rem;
+  margin: 0;
+}
+
+.hidden {
+  display: none;
+}
