@@ -37,6 +37,11 @@ p {
   cursor: pointer;
 }
 
+#fortune-cookie:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
 button {
   background: #FF9500;
   border: none;
@@ -56,6 +61,8 @@ button:hover {
 }
 
 .cookie-message {
+  animation-name: toFadeIn;
+  animation-duration: 500ms;
   background: #E4EDF1;
   box-shadow: 0.2rem 0.2rem 0.2rem rgba(85, 85, 85, 0.5);
   margin-top: 1.7rem;
@@ -71,4 +78,37 @@ button:hover {
 
 .hidden {
   display: none;
+}
+
+/* animation credits
+https://github.com/anasilveira9787/Sorte-de-hoje/tree/main
+*/
+
+@keyframes toFadeIn {
+  0% {
+    transform:
+    translateY(150px)
+    scale(0.1);
+
+  }
+
+  100% {
+    transform:
+    translateY(0px)
+    scale(1);
+  }
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
