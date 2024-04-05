@@ -1,10 +1,16 @@
 :root {
+  --color-gradient-start: #190361;
+  --color-gradient-end: #BB00FF;
+  --color-white-100: #FFF;
+  --color-white-200: #E4EDF1;
+  --color-yellow: #FF9500;
+
   font-size: 62.5%;
 }
 
 body {
   align-items: center;
-  background: linear-gradient(60deg, #190361, #BB00FF);
+  background: linear-gradient(60deg, var(--color-gradient-start), var(--color-gradient-end));
   color: #34355B;
   display: flex;
   height: 100vh;
@@ -43,10 +49,10 @@ p {
 }
 
 button {
-  background: #FF9500;
+  background: var(--color-yellow);
   border: none;
   border-radius: 0.4rem;
-  color: #FFF;
+  color: var(--color-white-100);
   cursor: pointer;
   font-family: "DM Sans", sans-serif;
   font-size: 1.5rem;
@@ -63,7 +69,7 @@ button:hover {
 .cookie-message {
   animation-name: toFadeIn;
   animation-duration: 500ms;
-  background: #E4EDF1;
+  background: var(--color-white-200);
   box-shadow: 0.2rem 0.2rem 0.2rem rgba(85, 85, 85, 0.5);
   margin-top: 1.7rem;
   padding: 1rem;
